@@ -124,7 +124,7 @@ class SocketHandler:
 
     def scan_for_timeouts(self):
         t = clock() - self.timeout
-        for s in self.single_sockets.itervalues():
+        for s in self.single_sockets.values():
             if s.last_hit < t and s.socket is not None:
                 self._close_socket(s)
 
