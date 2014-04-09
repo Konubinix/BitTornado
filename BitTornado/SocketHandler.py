@@ -220,9 +220,9 @@ class SocketHandler:
         if handler is None:
             handler = self.handler
         sock = socket.socket(socktype, socket.SOCK_STREAM)
-        sock.setblocking(0)
+        #sock.setblocking(0)
         try:
-            sock.connect_ex(dns)
+            sock.connect(dns)
         except socket.error:
             raise
         except Exception as e:
