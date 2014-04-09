@@ -1,3 +1,7 @@
+# proxify the code
+import socks
+socks.proxify()
+
 import os
 import random
 import socket

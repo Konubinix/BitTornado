@@ -1,3 +1,7 @@
+# proxify the code
+import socks
+socks.proxify()
+
 import sys
 import os
 import re
