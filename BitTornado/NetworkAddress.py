@@ -301,4 +301,4 @@ def to_ipv4(addr):
 
 def is_valid_ip(addr):
     """Test if string is valid IPv4 or IPv6"""
-    return (IPv4.isString(addr) or IPv6.isString(addr))
+    return addr and ((IPv4.isString(addr) or IPv6.isString(addr)))
